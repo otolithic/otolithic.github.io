@@ -53,7 +53,7 @@ a {
     transition-timing-function: linear;
 }
 
-nav a:hover {
+nav li:hover {
     -webkit-animation: shake 200ms infinite alternate;
     animation: shake 200ms infinite alternate;
 }
