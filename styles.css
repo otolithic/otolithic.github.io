@@ -19,8 +19,16 @@ nav {
     background-color: azure;
 
 }
+nav ul {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-nav a {
+nav li {
     background-image: url("dancingman1.png");
     background-repeat: no-repeat;
     display: inline-block;
@@ -31,6 +39,11 @@ nav a {
     height: 350px;
     width: 250px;
     padding: 20px;
+}
+
+nav a {
+    position: relative;
+    top: 120px;
 }
 
 a {
