@@ -21,6 +21,8 @@ nav {
 }
 
 nav a {
+    background-image: url("dancingman1.png");
+    background-repeat: no-repeat;
     display: inline-block;
     overflow: auto;
     position: relative;
@@ -28,13 +30,12 @@ nav a {
     margin-top: -197px;
     height: 350px;
     width: 250px;
-    border: 2px black dashed;
     padding: 20px;
 }
 
 a {
     text-decoration: none;
-    transition-property: color, left, top;
+    transition-property: color;
     transition-duration: 150ms;
     transition-timing-function: linear;
 }
