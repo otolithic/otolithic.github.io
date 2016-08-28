@@ -1,0 +1,85 @@
+html, body {
+    background-color: #64C6DC;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    height: 450px;
+    background-color: azure;
+
+}
+
+nav a {
+    display: inline-block;
+    overflow: auto;
+    position: relative;
+    top: 50%;
+    margin-top: -197px;
+    height: 350px;
+    width: 250px;
+    border: 2px black dashed;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    transition-property: color, left, top;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+}
+
+nav a:hover {
+    -webkit-animation: shake 200ms infinite alternate;
+    animation: shake 200ms infinite alternate;
+}
+
+a:hover {color:white;}
+
+section {
+    position: relative;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    top: 100px;
+    padding: 20px;
+}
+
+#colorbox {
+    position: absolute;
+    background-color: azure;
+    padding: 10px;
+    border: 2px black dashed;
+    width: 50%;
+    height: 200px;
+}
+
+//shake animation for hovering over nav links
+@-webkit-keyframes shake {
+    0% {-webkit-transform:translateX(0px);}
+    25% {-webkit-transform:translateX(5px); -webkit-transform:translateY(5px);}
+    50% {-webkit-transform:translateY(-5px);}
+    75% {-webkit-transform:translateX(-5px);}
+    100% {-webkit-transform:translateX(0px);}
+}
+         
+@keyframes shake {
+    0% {transform:translateX(0px);}
+    25% {transform:translateX(5px); transform:translateY(5px);}
+    50% {transform:translateY(-5px);}
+    75% {transform:translateX(-5px);}
+    100% {transform:translateX(0px);}
+ }
+         
