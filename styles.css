@@ -28,7 +28,9 @@ nav {
 }
 
 nav ul {
-    display: inline-block;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
     position: relative;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -46,11 +48,8 @@ nav li {
     display: inline-block;
     overflow: auto;
     position: relative;
-    top: 50%;
-    margin-top: -197px;
-    height: 350px;
-    width: 250px;
-    padding: 20px;
+    height: 100%;
+    width: 300px;
 }
 
 nav a {
