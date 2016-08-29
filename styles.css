@@ -1,11 +1,16 @@
 html, body {
     background-color: #64C6DC;
     font-family: sans-serif;
-    min-width: 100%;
     margin: 0;
     padding: 0;
+    
+    /*deletable? not sure what this does*/
+    min-width: 100%;
 }
 
+/*
+    index page only
+*/
 header {
     position: relative;
     text-align: center;
@@ -14,23 +19,23 @@ header {
 }
 
 nav {
-    border: 20px double;
-    border-left: none;
-    border-right: none;
-    box-shadow: 0 0 20px black;
-    border-image:url(border1.png) 20 0 20 0 repeat;
-    text-align: center;
     position: relative;
     left: 0px;
     height: 450px;
-    background-color: azure;
+    text-align: center;
 
+    background-color: azure;
+    box-shadow: 0 0 20px black;
+    
+    /*border for browsers that don't support border-image*/
+    border: 20px double;
+    
+    border-image:url(border1.png) 20 0 20 0 repeat;
+    border-left: none;
+    border-right: none;
 }
 
 nav ul {
-    overflow: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
     position: relative;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -39,47 +44,59 @@ nav ul {
     height: 99%;
     margin: 0;
     padding: 0;
-
+    
+    /*sideways scrolling when there are too many links to fit*/
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 nav li {
-    background-image: url("dancingman1.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    overflow: auto;
     position: relative;
+    display: inline-block;
     height: 100%;
     width: 300px;
+    
+    background-image: url("dancingman1.png");
+    background-repeat: no-repeat;
+
+    overflow: auto;
 }
 
-nav a {
-    position: relative;
-    font-weight: bold;
-    top: 120px;
-    padding: 60px 60px 100px 60px;
-}
-
-a {
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 150ms;
-    transition-timing-function: linear;
-}
-
+/*makes the men in the nav bar shake when hovered over*/
 nav li:hover {
     -webkit-animation: shake 200ms infinite alternate;
     animation: shake 200ms infinite alternate;
 }
 
-a:hover {color:white;}
+nav a {
+    position: relative;
+    font-weight: bold;
+    
+    /*center the text on the men's chests and enlarge clickable area*/
+    top: 150px;
+    padding: 60px 60px 100px 60px;
+}
 
 section {
     position: relative;
 }
 
+/*common to all pages*/
+a {
+    /*no underline*/
+    text-decoration: none;
+    
+    /*sets up color change when hovered over*/
+    transition-property: color;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+}
+
+a:hover {color:white;}
+
 footer {
     background-color: #2aa1bb;
-    //border-top: 3px solid black;
     box-shadow: 0 0 15px black inset;
     position: relative;
     text-align: center;
@@ -91,6 +108,10 @@ footer p {
     padding-top: 20px;
 }
 
+/*
+    other pages' styling & tricks
+*/
+
 #colorbox {
     position: absolute;
     background-color: azure;
@@ -100,7 +121,10 @@ footer p {
     height: 200px;
 }
 
-//shake animation for hovering over nav links
+/*
+    special
+*/
+/*shake animation for hovering over nav links*/
 @-webkit-keyframes shake {
     0% {-webkit-transform:translateX(0px);}
     25% {-webkit-transform:translateX(5px); -webkit-transform:translateY(5px);}
