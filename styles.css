@@ -44,6 +44,7 @@ nav li {
 nav a {
     position: relative;
     top: 120px;
+    padding: 60px 60px 100px 60px;
 }
 
 a {
