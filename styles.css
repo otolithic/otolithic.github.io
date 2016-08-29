@@ -8,12 +8,12 @@ html, body {
 header {
     position: relative;
     text-align: center;
+    height: 180px;
 }
 
 nav {
     text-align: center;
     position: relative;
-    top: 100px;
     left: 0px;
     height: 450px;
     background-color: azure;
