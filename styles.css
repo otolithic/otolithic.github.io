@@ -10,13 +10,14 @@ header {
     position: relative;
     text-align: center;
     height: 180px;
-    margin: 15px;
+    margin: 20px;
 }
 
 nav {
     border: 20px double;
     border-left: none;
     border-right: none;
+    box-shadow: 0 0 20px black;
     border-image:url(border1.png) 20 0 20 0 repeat;
     text-align: center;
     position: relative;
@@ -31,10 +32,12 @@ nav ul {
     position: relative;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
+    
     width: 100%;
     height: 99%;
     margin: 0;
     padding: 0;
+
 }
 
 nav li {
@@ -52,6 +55,7 @@ nav li {
 
 nav a {
     position: relative;
+    font-weight: bold;
     top: 120px;
     padding: 60px 60px 100px 60px;
 }
@@ -76,7 +80,8 @@ section {
 
 footer {
     background-color: #2aa1bb;
-    border-top: 3px solid black;
+    //border-top: 3px solid black;
+    box-shadow: 0 0 15px black inset;
     position: relative;
     text-align: center;
     margin-top: 75px;
