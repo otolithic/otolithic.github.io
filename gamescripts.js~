@@ -11,5 +11,5 @@
 		hexcolor = hexcolor.concat(hex);
 	}
 	$("#colorname").text(hexcolor);	
-	$("#colorbox").css("background-color", hexcolor);
+	$("#colorbox").css("background-color","blue");
 	})

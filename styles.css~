@@ -126,8 +126,7 @@ footer p {
 
 #colorbox {
     position: relative;
-    left:50%;
-    margin-left: -150px;
+    left:50%-100px;
     background-color: rgb(0,0,0);
     border: 2px black dashed;
     width: 300px;
