@@ -124,10 +124,26 @@ footer p {
 	font-size: 5em;
 }
 
-#colorbox {
-    position: relative;
-    left:50%;
-    margin-left: -150px;
+#colors {
+	display: flex;
+	justify-content: center;
+}
+
+#colorbox1 {
+    background-color: rgb(0,0,0);
+    border: 2px black dashed;
+    width: 300px;
+    height: 300px;
+}
+
+#colorbox2 {
+    background-color: rgb(0,0,0);
+    border: 2px black dashed;
+    width: 300px;
+    height: 300px;
+}
+
+#colorboxmiddle {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
     width: 300px;
