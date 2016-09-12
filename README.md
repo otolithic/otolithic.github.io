@@ -11,4 +11,4 @@ In the future I would like to:
 * catalogue scans and photographs of my artwork
 
 
-<sup>1</sup>Based on an experiment by Robert Ennis and Qasim Zaidi, "Geometrical structure of perceptual color space is affine" (2013). I cannot find the text of this article online but a description can be found in "Perceptual Spaces: Mathematical Structures to Neural Mechanisms" by Zaidi et al (2013).
+<sup>1</sup>Based on an experiment by Robert Ennis and Qasim Zaidi, "Geometrical structure of perceptual color space is affine" (2013). I cannot find the text of this article online but a description of the experiment in question can be found in "Perceptual Spaces: Mathematical Structures to Neural Mechanisms" by Zaidi et al (2013).
