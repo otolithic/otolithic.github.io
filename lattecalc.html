@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<head><title>Latte Foam Calculator</title></head>
+
+<body>
+	<script src="lattecalc.js"></script>
+	<form id="lattecalc" oninput="updateOutput()">
+		<p>Amount of milk: <input name="oz" type="number" value="8"/> oz</p>
+		<p>Current milk temperature: <br>
+			<input name="temp" type="radio" value="26"> Room temp <br>
+			<input name="temp" type="radio" value="4"> Fridge temp<br>
+			<input name="temp" type="radio" value=""> Other: <input name="othertemp" type="text">
+		</p>
+		<p>Wattage of microwave: <input name="watt" type="number" value="1100" /> Watts </p>
+		<input type="submit" value="Submit">
+		<br>
+		<p><output name="time" value=""></p>
+	</form>
+</body>
