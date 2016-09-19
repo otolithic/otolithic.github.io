@@ -23,27 +23,29 @@ function updateOutput() {
 	if (grams <=0) {
 		out.value = new CalcException("You can't have negative milk");	
 	}
+	else if (temp >= 65 && temp <= 68) {
+			out.value = new CalcException("Your milk is pretty much ready to froth!");		
+	}
+	else if (temp >= 76) {
+		out.value = new CalcException("Uh oh, your milk may be too hot to froth.");		
+	}
+	else if (temp <= -273) {
+		out.value = new CalcException("It appears you've found a way to cool milk to or below absolute zero. Bravo.")		
+	}
+	else if (watts <= 0) {
+		out.value = new CalcException("I doubt you have a negative watt microwave.");		
+	}
+	
 	else {
 		var tempDiff = foamTemp - temp;
 		var joules = tempDiff * grams * specificHeatofMilk;
 		var time = joules / watts;	
-		if (temp >= 65 && temp <= 68) {
-			out.value = new CalcException("Your milk is pretty much ready to froth!");		
-		}
+
 		else if (isNaN(time)) {
 			out.value = new CalcException("Please use actual numbers :P");		
 		}
 		else if (time <= 3) {
 			out.value = new CalcException("Sorry, don't use a microwave for this one. It would take less than 3 seconds.");		
-		}
-		else if (temp <= -273) {
-			out.value = new CalcException("It appears you've found a way to cool milk to or below absolute zero. Bravo.")		
-		}
-		else if (temp >= 76) {
-			out.value = new CalcException("Uh oh, your milk may be too hot to froth.");		
-		}
-		else if (watts <= 0) {
-			out.value = new CalcException("I doubt you have a negative watt microwave.");		
 		}
 		else if (time >= 60) {
 			if (time >= 3600) {
