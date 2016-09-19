@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="lattecalc.js"></script>
 	
+	<div id="foampage">
 	<form id="lattecalc">
 		<p>Amount of milk: <input name="grams" type="number" value="200"/> grams</p>
 		<p>Current milk temperature: <br>
@@ -21,4 +22,5 @@
 		<br>
 		<p><output name="time" for="oz temp watts" value=""></output></p>
 	</form>
+	</div>
 </body>

@@ -25,5 +25,5 @@ function updateOutput() {
 	var time = joules / watts;
 		
 	
-	out.value="Microwave your milk for about " + Math.floor(time) + " seconds!";
+	out.value="Microwave your milk for about " + Math.floor(time) + " seconds.";
 }

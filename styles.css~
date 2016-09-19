@@ -143,11 +143,16 @@ footer p {
     height: 300px;
 }
 
-#colorbox3 {
+#colorboxmiddle {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
     width: 300px;
     height: 300px;
+}
+
+#foampage {
+	display: flex;
+	justify-content: center;
 }
 
 /*

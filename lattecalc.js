@@ -1,7 +1,7 @@
 function updateOutput() {
 	var form = document.getElementById("lattecalc");
 	var out = form.elements["time"];
-	var grams = form.elements["grams"].value;
+	var grams = form.elements["grams"].value / 1.0002;
 	var temp = 0;
 	var temps = new Array();
 	temps["room"] = 26;

@@ -150,6 +150,11 @@ footer p {
     height: 300px;
 }
 
+#foampage {
+	display: flex;
+	justify-content: center;
+}
+
 /*
     special
 */
