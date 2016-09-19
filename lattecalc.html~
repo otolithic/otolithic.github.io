@@ -6,17 +6,19 @@
 <head><title>Latte Foam Calculator</title></head>
 
 <body>
+	<link rel="stylesheet" href="styles.css">
 	<script src="lattecalc.js"></script>
-	<form id="lattecalc" oninput="updateOutput()">
-		<p>Amount of milk: <input name="oz" type="number" value="8"/> oz</p>
+	
+	<form id="lattecalc">
+		<p>Amount of milk: <input name="grams" type="number" value="200"/> grams</p>
 		<p>Current milk temperature: <br>
-			<input name="temp" type="radio" value="26"> Room temp <br>
-			<input name="temp" type="radio" value="4"> Fridge temp<br>
-			<input name="temp" type="radio" value=""> Other: <input name="othertemp" type="text">
+			<input name="temp" type="radio" value="room"> Room temp <br>
+			<input name="temp" type="radio" value="fridge"> Fridge temp<br>
+			<input name="temp" type="radio" value="other"> Other: <input name="othertemp" type="number"> degrees C
 		</p>
-		<p>Wattage of microwave: <input name="watt" type="number" value="1100" /> Watts </p>
-		<input type="submit" value="Submit">
+		<p>Wattage of microwave: <input name="watts" type="number" value="1100" /> Watts </p>
+		<input type="button" value="Calculate" onclick="updateOutput()">
 		<br>
-		<p><output name="time" value="45">seconds</output></p>
+		<p><output name="time" for="oz temp watts" value=""></output></p>
 	</form>
 </body>
