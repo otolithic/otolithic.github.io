@@ -4,7 +4,7 @@ function updateOutput() {
 	var grams = form.elements["grams"].value / 1.0002;
 	var temp = 0;
 	var temps = new Array();
-	temps["room"] = 26;
+	temps["room"] = 25;
 	temps["fridge"] = 4;
 	temps["other"] = parseInt(form.elements["othertemp"].value);
 	
@@ -31,7 +31,7 @@ function updateOutput() {
 			out.value = new CalcException("Your milk is pretty much ready to froth!");		
 		}
 		else if (isNaN(time)) {
-			out.value = new CalcException("Please use actual numbers, smartass");		
+			out.value = new CalcException("Please use actual numbers :P");		
 		}
 		else if (time <= 3) {
 			out.value = new CalcException("Sorry, don't use a microwave for this one. It would take less than 3 seconds.");		
