@@ -40,13 +40,14 @@ function updateOutput() {
 		var tempDiff = foamTemp - temp;
 		var joules = tempDiff * grams * specificHeatofMilk;
 		var time = joules / watts;	
-
-		else if (isNaN(time)) {
+		
+		if (isNaN(time)) {
 			out.value = new CalcException("Please use actual numbers :P");		
 		}
 		else if (time <= 3) {
 			out.value = new CalcException("Sorry, don't use a microwave for this one. It would take less than 3 seconds.");		
 		}
+		
 		else if (time >= 60) {
 			if (time >= 3600) {
 				out.value="That's ridiculous, you would need to microwave that milk for over an hour.";			
