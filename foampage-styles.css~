@@ -1,0 +1,41 @@
+html, body {
+	background-color: #FFF8E7;
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+    
+   /*deletable? not sure what this does*/
+   min-width: 100%;
+}
+
+#foampage {
+	display: inline-block;
+	text-align: center;
+}
+
+#foamdesc {
+	display: inline-block;
+	text-align: justify;
+	width: 30%;
+	min-width: 30em;
+}
+
+
+#lattecalc {	
+	display: inline-block;
+	clear: left;
+	position: relative;
+	text-align: left;
+	
+	border: 2px double #9CFFCE;
+	padding: 40px;
+}
+
+#results { 
+	text-align: center;
+}
+
+input {
+	border: 1px solid grey;
+	padding: 5px;
+}

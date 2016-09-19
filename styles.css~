@@ -151,8 +151,33 @@ footer p {
 }
 
 #foampage {
-	display: flex;
-	justify-content: center;
+	background-color: #FFF8E7;
+	display: inline-block;
+	text-align: center;
+}
+
+#foamdesc {
+	display: inline-block;
+	text-align: justify;
+	width: 30%;
+	min-width: 30em;
+}
+
+
+#lattecalc {	
+	display: inline-block;
+	clear: left;
+	position: relative;
+	text-align: left;
+}
+
+#results { 
+	text-align: center;
+}
+
+input {
+	border: 1px solid grey;
+	padding: 5px;
 }
 
 /*

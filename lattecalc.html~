@@ -6,21 +6,46 @@
 <head><title>Latte Foam Calculator</title></head>
 
 <body>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="foampage-styles.css">
 	<script src="lattecalc.js"></script>
 	
 	<div id="foampage">
+	<h1>PERFECT FOAM AT LAST</h1>
+	<div>
+	<div id="foamdesc">
+		<p>I like lattes, a lot. I bought a little Bialetti coffee maker to make near-espresso quality
+		coffee and a small $2.99 milk frother to kick my Starbucks habit and make lattes at home. But 
+		the problem was, I could never get consistently good, frothy milk. It turns out milk has an optimum
+		temperature for frothing, around 150-155 degrees Fahrenheit, or 65-68 degrees C. Get it too hot and
+		the proteins necessary to form milk bubbles denature, making good foam unlikely. So the secret is
+		knowing how long to heat it to get it to the perfect temperature for forming foam. This calculator uses
+		the specific heat of (whole) milk (3.77 J/gK), the wattage of your microwave, and the amount of milk
+		you're trying to warm up to calculate the amount of time you should microwave milk to make it foamable
+		with a cheap little stirrer like mine. Happy foaming!</p>	
+	</div>	
+	</div>
+	<div>
 	<form id="lattecalc">
-		<p>Amount of milk: <input name="grams" type="number" value="200"/> grams</p>
+		<p>Amount of milk: <input name="grams" type="number" value="200"/> mL</p>
 		<p>Current milk temperature: <br>
 			<input name="temp" type="radio" value="room"> Room temp <br>
 			<input name="temp" type="radio" value="fridge" checked> Fridge temp<br>
 			<input name="temp" type="radio" value="other"> Other: <input name="othertemp" type="quantity"> degrees C
 		</p>
 		<p>Wattage of microwave: <input name="watts" type="number" value="1100" /> Watts </p>
-		<input type="button" value="Calculate" onclick="updateOutput()">
-		<br>
-		<p><output name="time" for="oz temp watts" value=""></output></p>
+		<div id="results">
+			<input type="button" value="Calculate" onclick="updateOutput()">
+			<br>
+			<p><output name="time" for="oz temp watts" value=""></output></p>
+		</div>	
 	</form>
+	</div>
+	<div>
+	<p> Further reading:</p>
+	<p>
+	<a href="https://www.capresso.com/media/wysiwyg/How_to_Achieve_the_Perfect_Frothed_Milk.pdf">A more detailed guide to milk frothing with cafe-grade equipment</a>
+	<br><a href="https://en.wikipedia.org/wiki/Cosmic_latte">Cosmic Latte, the color of the universe, and this page</a>	
+	</p>	
+	</div>
 	</div>
 </body>
