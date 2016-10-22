@@ -88,7 +88,7 @@ section {
     position: relative;
 }
 
-/*common to all pages*/
+/*common to all pages?*/
 a {
     /*no underline*/
     text-decoration: none;
@@ -128,25 +128,48 @@ footer p {
 	justify-content: center;
 }
 
+#gamecolors{
+	display: flex;
+	justify-content: space-around;
+	margin: 30px;
+}
+
 #colorbox1 {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 #colorbox2 {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 #colorboxmiddle {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+}
+
+#interactivebox {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#description {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 30px;
+}
+
+input[name=red-green], input[name=blue-yellow] {
+	width: 400px;
 }
 
 /*

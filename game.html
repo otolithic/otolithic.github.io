@@ -13,12 +13,25 @@
 	<div id="colorname">
 		#000000	
 	</div>  
-	<div id = "colors">
+	<div id = "gamecolors">
 		<canvas id="colorbox1">
 		</canvas>
-		<canvas id="colorboxmiddle">
-		</canvas>
+		<div id="interactivebox">
+		
+			<canvas id="colorboxmiddle"></canvas>		
+			
+			Red/Green
+			<input name="red-green" type="range" value="0" width="400px">
+			<p></p>
+			Blue/Yellow
+			<input name="blue-yellow" type="range" value="0">
+			
+						
+		</div>
 		<canvas id="colorbox2">
 		</canvas>
+	</div>
+	<div id="description">
+		Use the sliders to adjust the middle box to the color halfway between the ones displayed.	
 	</div>
 </body>

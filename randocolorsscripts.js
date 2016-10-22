@@ -4,11 +4,11 @@ $(document).ready(function(){
 	var randocolor2 =[Math.floor(Math.random()*256), Math.floor(Math.random()*256), Math.floor(Math.random()*256)];		
 	var middlecolor = [0,0,0];
 	
-	var MAX_DIFFERENCE = 10;
+	var MIN_DIFFERENCE = 10;
 		
 	//prevent too similar colors		
 	for (x = 0; x < randocolor1.length; x++) {
-		if (Math.abs(randocolor1[x] - randocolor2[x]) < MAX_DIFFERENCE)
+		if (Math.abs(randocolor1[x] - randocolor2[x]) < MIN_DIFFERENCE)
 			randocolor1[x] = Math.floor(Math.random()*256);		
 	}
 	
