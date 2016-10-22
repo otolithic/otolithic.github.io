@@ -10,26 +10,42 @@
    <script src="gamescripts.js"></script>
    
    
-	<div id="colorname">
-		#000000	
-	</div>  
+
+ 
 	<div id = "gamecolors">
-		<canvas id="colorbox1">
-		</canvas>
-		<div id="interactivebox">
-		
-			<canvas id="colorboxmiddle"></canvas>		
-			
-			Red/Green
-			<input name="red-green" type="range" value="0" width="400px">
-			<p></p>
-			Blue/Yellow
-			<input name="blue-yellow" type="range" value="0">
-			
-						
+		<div class="static-color-box">
+			<canvas id="colorbox1"></canvas>
+			<div id="colorname1">#000000</div>		
 		</div>
-		<canvas id="colorbox2">
-		</canvas>
+		
+		<div id="interactivebox">
+			
+			<form id="colorpicker">
+			R: <output name="redvalue" for="red" value="0">0</output>
+			<input name="red" type="range" min="0" max="255" oninput="updateColor()">
+			<p></p>
+			
+			G: <output name="greenvalue" for="green" value="0">0</output>
+			<input name="green" type="range" value="0" max="255" oninput="updateColor()">
+			<p></p>
+			
+			B: <output name="bluevalue" for="blue" value="0">0</output>
+			<input name="blue" type="range" value="0" max="255" oninput="updateColor()">
+			<p></p>
+			
+			<canvas id="colorboxmiddle"></canvas>
+			<p></p>
+			<output name="middlecolorname" for="red green blue" value="poop"> #000000 </output>
+			
+			</form>	
+			
+			
+					
+		</div>
+		<div class = "gamecolors">	
+			<canvas id="colorbox2"></canvas>
+			<div id="colorname2">#000000</div> 
+		</div>		
 	</div>
 	<div id="description">
 		Use the sliders to adjust the middle box to the color halfway between the ones displayed.	

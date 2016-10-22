@@ -117,7 +117,7 @@ footer p {
     other pages' styling & tricks
 */
 
-#colorname {
+#colorname, #colorname1, #colorname2, #colorname3 {
 	position: relative;
 	text-align: center;
 	font-size: 5em;
@@ -168,8 +168,14 @@ footer p {
 	top: 30px;
 }
 
-input[name=red-green], input[name=blue-yellow] {
+input[name=red], input[name=green], input[name=blue] {
 	width: 400px;
+}
+
+output[name=middlecolorname] {
+	position: relative;
+	text-align: center;
+	font-size: 5em;
 }
 
 /*
