@@ -1,0 +1,25 @@
+<!-- displays 2 random colors with their intermediate between them -->
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head><title>Pretty Colors</title></head>
+<body>
+   <link rel="stylesheet" href="styles.css">
+   <script src="jquery-3.1.0.js"></script>
+   <script src="jquery.color-2.1.2.js"></script>
+   <script src="gamescripts.js"></script>
+   
+   
+	<div id="colorname">
+		#000000	
+	</div>  
+	<div id = "colors">
+		<canvas id="colorbox1">
+		</canvas>
+		<canvas id="colorboxmiddle">
+		</canvas>
+		<canvas id="colorbox2">
+		</canvas>
+	</div>
+</body>
