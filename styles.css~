@@ -117,7 +117,31 @@ footer p {
     other pages' styling & tricks
 */
 
-#colorname, #colorname1, #colorname2, #colorname3 {
+#description {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 50px;
+}
+
+#interactivebox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#sliders {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+}
+
+#colorname, #colorname1, #colorname2{
 	position: relative;
 	text-align: center;
 	font-size: 5em;
@@ -128,44 +152,15 @@ footer p {
 	justify-content: center;
 }
 
-#gamecolors{
-	display: flex;
-	justify-content: space-around;
-	margin: 30px;
-}
-
-#colorbox1 {
+#colorbox1, #colorbox2, #colorboxmiddle {
     background-color: rgb(0,0,0);
     border: 2px black dashed;
     width: 400px;
     height: 400px;
 }
 
-#colorbox2 {
-    background-color: rgb(0,0,0);
-    border: 2px black dashed;
-    width: 400px;
-    height: 400px;
-}
-
-#colorboxmiddle {
-    background-color: rgb(0,0,0);
-    border: 2px black dashed;
-    width: 400px;
-    height: 400px;
-}
-
-#interactivebox {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-
-#description {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	top: 30px;
+.gamecolors {
+	display: inline-block;
 }
 
 input[name=red], input[name=green], input[name=blue] {
@@ -176,10 +171,6 @@ output[name=middlecolorname] {
 	position: relative;
 	text-align: center;
 	font-size: 5em;
-}
-
-.interactive-element:nth-of-type(5) {
-	order: 1;
 }
 
 /*
