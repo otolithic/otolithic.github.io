@@ -168,42 +168,52 @@ footer p {
 
 input[name=red], input[name=green], input[name=blue] {
 	width: 25%;
-	
-
 }
 
-        input[type='range'] {
-            -webkit-appearance: none;
-            border-radius: 8px;
-            height: 2em;
-            vertical-align: middle;
-        }
-        input[type='range']::-moz-range-track {
-            -moz-appearance: none;
-            border-radius: 8px;
-            height: 2em;
-        }
-        input[type='range']::-webkit-slider-thumb {
-            -webkit-appearance: none !important;
-            border-radius: 20px;
-            background-color: #FFF;
-            border: 1px solid #999;
-            height: 2em;
-            width: 1em;
-        }
-        input[type='range']::-moz-range-thumb {
-            -moz-appearance: none;
-            border-radius: 20px;
-            background-color: #FFF;
-            border: 1px solid #999;
-            height: 2em;
-            width: 1em;
-        }
+input[type='range'] {
+	-webkit-appearance: none;
+	border-radius: 8px;
+	height: 2em;
+	vertical-align: middle;
+}
+
+input[type='range']::-moz-range-track {
+	-moz-appearance: none;
+	border-radius: 8px;
+	height: 2em;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	border-radius: 20px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	height: 2em;
+	width: 1em;
+}
+
+input[type='range']::-moz-range-thumb {
+	-moz-appearance: none;
+	border-radius: 20px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	height: 2em;
+	width: 1em;
+}
         
 output[name=middlecolorname] {
 	position: relative;
 	text-align: center;
 	font-size: 5em;
+}
+
+.donebutton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	width: 400px;
+	font-size: 2em;
 }
 
 #resultText, #scoreText {

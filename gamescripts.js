@@ -49,6 +49,14 @@ $(document).ready(function(){
 	form.elements["red"].value = 0;
 	form.elements["green"].value = 0;
 	form.elements["blue"].value = 0;
+	
+	//i'm putting this here cause I can't figure out how to integrate it with displayResults()
+	//but it scrolls down when the Done button is clicked
+	
+	$('.donebutton').click(function(){
+		$("html, body").animate({ scrollTop: 700}, 600);
+		return false;	
+	});
 })
 
 function getHexColor(r, g, b) {
@@ -97,7 +105,6 @@ function updateColor() {
 }
 
 function displayResults() {
-	// display the actual middle color and its hex ID
 	var rgb = getRGB();
 	var answer = getHexColor(middlecolor[0],middlecolor[1],middlecolor[2]);
 	var guess = getHexColor(rgb[0],rgb[1],rgb[2]);
@@ -106,18 +113,17 @@ function displayResults() {
 	var scoreText = document.getElementById("scoreText");
 	var score = document.getElementById("score");
 	
+	// display the actual middle color and its hex ID
 	resultText.style.display = "block";
 	resultText.innerHTML = "The correct answer was " + answer + ".";
-	resultColor.style.display = "inline-block";
+	resultColor.style.display = "flex";
 	resultColor.style.backgroundColor = answer;
 	
+	// calculate and display the player's score based on their guess
 	scoreText.style.display = "block";
 	scoreText.innerHTML = "You guessed " + guess + ". Your score is: ";
 	score.style.display = "block";	
 	score.innerHTML = calcScore(middlecolor, rgb);
-	
-	
-	// calculate and display the player's score based on their guess
 }
 
 function calcScore(actual, guess) {

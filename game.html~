@@ -2,7 +2,7 @@
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<head><title>Pretty Colors</title></head>
+<head><title>Midpoint</title></head>
 <body>
    <link rel="stylesheet" href="styles.css">
    <script src="jquery-3.1.0.js"></script>
@@ -53,11 +53,14 @@
 			</div>
 		</form>	
 		
-		<button onclick="displayResults()">Done!</button>
+		<button class="donebutton" onclick="displayResults()">Done!</button>
+		
+	</div>
+	
+
 		<div id="resultText">		</div>
 		<canvas id="resultColor"></canvas>
 		<div id="scoreText">			</div>
-		<div id="score">	</div>		
-	</div>
+		<div id="score">	</div>
 	
 </body>
