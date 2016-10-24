@@ -208,7 +208,7 @@ output[name=middlecolorname] {
 }
 
 output[name=redvalue], output[name=greenvalue], output[name=bluevalue] {
-	width: 50px;
+	width: 10px;
 }
 
 .donebutton {

@@ -10,8 +10,8 @@ $(document).ready(function(){
 		
 	//prevent too similar colors		
 	for (x = 0; x < randocolor1.length; x++) {
-		if (Math.abs(randocolor1[x] - randocolor2[x]) < MIN_DIFFERENCE)
-			randocolor1[x] = Math.floor(Math.random()*256);		
+		while (Math.abs(randocolor1[x] - randocolor2[x]) < MIN_DIFFERENCE)
+			{randocolor1[x] = Math.floor(Math.random()*256);}		
 	}
 	
 	for (x = 0; x < middlecolor.length; x++) {

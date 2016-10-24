@@ -167,7 +167,7 @@ footer p {
 }
 
 input[name=red], input[name=green], input[name=blue] {
-	width: 25%;
+	width: 500px;
 }
 
 input[type='range'] {
