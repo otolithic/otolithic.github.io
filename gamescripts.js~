@@ -56,7 +56,6 @@ $(document).ready(function(){
 	$('.donebutton').click(function(){
 		$("html, body").animate({ scrollTop: 700}, 600);
 		return false;	
-	
 	});
 })
 
@@ -95,9 +94,11 @@ function updateColor() {
 	var out = form.elements["middlecolorname"];
 	var rgb = getRGB();
 	
-	redvalue.value = rgb[0];
-	greenvalue.value = rgb[1];
-	bluevalue.value = rgb[2];	
+		
+	
+	redvalue.value = "R: " + rgb[0];
+	greenvalue.value = "G: " + rgb[1];
+	bluevalue.value = "B: " + rgb[2];	
 	hexcolor = getHexColor(rgb[0],rgb[1],rgb[2]);
 	
 	document.getElementById("colorboxmiddle").style.backgroundColor=hexcolor;	

@@ -94,6 +94,8 @@ function updateColor() {
 	var out = form.elements["middlecolorname"];
 	var rgb = getRGB();
 	
+		
+	
 	redvalue.value = rgb[0];
 	greenvalue.value = rgb[1];
 	bluevalue.value = rgb[2];	

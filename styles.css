@@ -173,14 +173,14 @@ input[name=red], input[name=green], input[name=blue] {
 input[type='range'] {
 	-webkit-appearance: none;
 	border-radius: 8px;
-	height: 2em;
+	height: 2.7em;
 	vertical-align: middle;
 }
 
 input[type='range']::-moz-range-track {
 	-moz-appearance: none;
 	border-radius: 8px;
-	height: 2em;
+	height: 2.7em;
 }
 
 input[type='range']::-webkit-slider-thumb {
@@ -188,8 +188,8 @@ input[type='range']::-webkit-slider-thumb {
 	border-radius: 20px;
 	background-color: #FFF;
 	border: 1px solid #999;
-	height: 2em;
-	width: 1em;
+	height: 3em;
+	width: 1.5em;
 }
 
 input[type='range']::-moz-range-thumb {
@@ -197,14 +197,18 @@ input[type='range']::-moz-range-thumb {
 	border-radius: 20px;
 	background-color: #FFF;
 	border: 1px solid #999;
-	height: 2em;
-	width: 1em;
+	height: 3em;
+	width: 1.5em;
 }
         
 output[name=middlecolorname] {
 	position: relative;
 	text-align: center;
 	font-size: 5em;
+}
+
+output[name=redvalue], output[name=greenvalue], output[name=bluevalue] {
+	width: 10px;
 }
 
 .donebutton {

@@ -21,18 +21,21 @@
 			<div id="sliders">
 		
 				<div class="slider">
-					R: <output name="redvalue" for="red" value="0">0</output>
+					R					
 					<input name="red" type="range" min="0" max="255" oninput="updateColor()">
+					<output name="redvalue" for="red" value="0">R: 0</output>
 					<p></p>
 				</div>
 				<div class="slider">
-					G: <output name="greenvalue" for="green" value="0">0</output>
+					G
 					<input name="green" type="range" value="0" max="255" oninput="updateColor()">
+					<output name="greenvalue" for="green" value="0">G: 0</output>
 					<p></p>
 				</div>
 				<div class="slider">
-					B: <output name="bluevalue" for="blue" value="0">0</output>
+					B
 					<input name="blue" type="range" value="0" max="255" oninput="updateColor()">
+					<output name="bluevalue" for="blue" value="0">B: 0</output>
 					<p></p>
 				</div>
 			</div>
@@ -53,11 +56,10 @@
 			</div>
 		</form>	
 		
-		<button class="donebutton" onclick="displayResults()">Done!</button>
 		
 	</div>
 	
-
+		<button class="donebutton" onclick="displayResults()">Done!</button>
 		<div id="resultText">		</div>
 		<canvas id="resultColor"></canvas>
 		<div id="scoreText">			</div>
