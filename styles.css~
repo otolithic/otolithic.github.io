@@ -140,6 +140,7 @@ footer p {
 .slider {
 	display: flex;
 	justify-content: center;
+	font-size: 2em;
 }
 
 #colorname, #colorname1, #colorname2, #score{
@@ -165,8 +166,9 @@ footer p {
 }
 
 input[name=red], input[name=green], input[name=blue] {
-	width: 400px;
+	width: 25%;
 }
+
 
 output[name=middlecolorname] {
 	position: relative;
@@ -176,7 +178,7 @@ output[name=middlecolorname] {
 
 #resultText, #scoreText {
 	display: none;
-	margin-top: 30px;
+	margin: 30px;
 	text-align: center;
 }
 

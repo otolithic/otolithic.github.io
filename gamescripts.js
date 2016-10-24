@@ -44,7 +44,11 @@ $(document).ready(function(){
 	$("#colorbox2").css("background-color", hexcolor[1]);
 	
 	
-	
+	//set sliders to 0
+	var form = document.getElementById("colorpicker");
+	form.elements["red"].value = 0;
+	form.elements["green"].value = 0;
+	form.elements["blue"].value = 0;
 })
 
 function getHexColor(r, g, b) {

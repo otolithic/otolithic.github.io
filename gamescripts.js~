@@ -122,6 +122,6 @@ function calcScore(actual, guess) {
 		sumSquares += Math.pow(actual[x]-guess[x], 2);	
 	}
 	
-	return Math.sqrt(sumSquares);
+	return Math.round(Math.sqrt(sumSquares));
 }
 	
