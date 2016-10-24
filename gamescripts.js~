@@ -47,34 +47,81 @@ $(document).ready(function(){
 	
 })
 
-function updateColor() {
-	var form = document.getElementById("colorpicker");
-	var red = form.elements["red"];
-	var green = form.elements["green"];
-	var blue = form.elements["blue"];
-	var redvalue = form.elements["redvalue"];
-	var greenvalue = form.elements["greenvalue"];
-	var bluevalue = form.elements["bluevalue"];
-	var guess = [0, 0, 0];	
-	
-	var out = form.elements["middlecolorname"];
-	
-	
-	redvalue.value = red.value;
-	greenvalue.value = green.value;
-	bluevalue.value = blue.value;	
-	guess = [red.value, green.value, blue.value];
-	var guesshex = "#";	
+function getHexColor(r, g, b) {
+	var guesshex= "#";
+	var hex = 0;
+	guess = [r, g, b];
 	
 	for (x = 0; x< guess.length; x++) {
-		var hex = (+guess[x]).toString(16);
+		hex = (+guess[x]).toString(16);
 		if (hex.length == 1)
 			hex = "0" + hex;
 		guesshex = guesshex.concat(hex);
 	}	
 	
-	document.getElementById("colorboxmiddle").backgroundColor(guesshex);	
+	return guesshex;
+}
+
+function getRGB() {
+	var form = document.getElementById("colorpicker");
+	var red = form.elements["red"];
+	var green = form.elements["green"];
+	var blue = form.elements["blue"];
+
+	var rgb = [red.value, green.value, blue.value];
 	
-	out.value = guesshex;
+	return rgb;
+}
+
+function updateColor() {
+	var form = document.getElementById("colorpicker");
+	var redvalue = form.elements["redvalue"];
+	var greenvalue = form.elements["greenvalue"];
+	var bluevalue = form.elements["bluevalue"];
+	
+	var out = form.elements["middlecolorname"];
+	var rgb = getRGB();
+	
+	redvalue.value = rgb[0];
+	greenvalue.value = rgb[1];
+	bluevalue.value = rgb[2];	
+	hexcolor = getHexColor(rgb[0],rgb[1],rgb[2]);
+	
+	document.getElementById("colorboxmiddle").style.backgroundColor=hexcolor;	
+	
+	out.value = hexcolor;
+}
+
+function displayResults() {
+	// display the actual middle color and its hex ID
+	var rgb = getRGB();
+	var answer = getHexColor(middlecolor[0],middlecolor[1],middlecolor[2]);
+	var guess = getHexColor(rgb[0],rgb[1],rgb[2]);
+	var resultText = document.getElementById("resultText");
+	var resultColor = document.getElementById("resultColor");
+	var scoreText = document.getElementById("scoreText");
+	var score = document.getElementById("score");
+	
+	resultText.style.display = "block";
+	resultText.innerHTML = "The correct answer was " + answer + ".";
+	resultColor.style.display = "inline-block";
+	resultColor.style.backgroundColor = answer;
+	
+	scoreText.style.display = "block";
+	scoreText.innerHTML = "You guessed " + guess + ". Your score is: ";
+	score.style.display = "block";	
+	score.innerHTML = calcScore(middlecolor, rgb);
+	
+	
+	// calculate and display the player's score based on their guess
+}
+
+function calcScore(actual, guess) {
+	var sumSquares = 0;
+	for (x = 0; x<actual.length; x++) {
+		sumSquares += Math.pow(actual[x]-guess[x], 2);	
+	}
+	
+	return Math.sqrt(sumSquares);
 }
 	

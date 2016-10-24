@@ -142,7 +142,7 @@ footer p {
 	justify-content: center;
 }
 
-#colorname, #colorname1, #colorname2{
+#colorname, #colorname1, #colorname2, #score{
 	position: relative;
 	text-align: center;
 	font-size: 5em;
@@ -172,6 +172,22 @@ output[name=middlecolorname] {
 	position: relative;
 	text-align: center;
 	font-size: 5em;
+}
+
+#resultText, #scoreText {
+	display: none;
+	margin: 30px;
+	text-align: center;
+}
+
+#resultColor {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(0,0,0);
+   border: 2px black dashed;
+   width: 400px;
+   height: 400px;
 }
 
 /*

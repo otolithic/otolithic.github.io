@@ -44,7 +44,7 @@
 				</div>
 				<div class="gamecolors">
 					<canvas id="colorboxmiddle"></canvas><br>
-					<output name="middlecolorname" for="red green blue" value="poop"> #000000 </output>
+					<output name="middlecolorname" for="red green blue" value="0"> #000000 </output>
 				</div>
 				<div class="gamecolors">	
 					<canvas id="colorbox2"></canvas>
@@ -53,8 +53,10 @@
 			</div>
 		</form>	
 		
-		<button>Done!</button>
-				
+		<button onclick="displayResults()">Done!</button>
+		<div id="resultText">		</div>
+		<canvas id="resultColor"></canvas>
+		<div id="scoreText">			</div>		
 	</div>
 	
 </body>
