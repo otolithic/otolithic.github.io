@@ -2,11 +2,13 @@
 A personal website. Here I plan to store various art, music, and programming projects of mine.
 
 Currently it hosts:  
-* pretty colors: generates 2 random colors based on random rgb values. Calculates and displays their intermediate.
+* [pretty colors](http://otolithic.github.io/prettycolors): generates 2 random colors based on random rgb values. Calculates and displays their intermediate.
+* [Midpoint](http://otolithic.github.io/colorgame) pretty colors, but you're judged on your ability to predict their midpoint. Ultimately I would like for the game to generate two more colors, do the same, and then find the midpoint between the two midpoints. Then the quadrilateral formed by the 4 random colors is displayed along with its exact midpoints and the accuracy of the player is rated.<sup>1</sup>
+* [Latte Foam Calculator](http://otolithic.github.io/lattecalc): simple attempt to provide the proper microwave time for getting milk to a foamable temperature
+* [Monster Mash](http://otolithic.github.io/monstermash): randomly generated artwork intended to cause unease and discomfort, and also--you new best friend
 
 In the future I would like to:
 * clean up the design of the index page, implement a constant horizontal carousel of the "dancing men" links
-* turn "pretty colors" into a game wherein the user is prompted to adjust the red-green and blue-yellow values of the middle square until they believe they have reached the midpoint of the two random colors. Then, for two new random colors, do the same, and then find the midpoint between the two midpoints. Then the quadrilateral formed by the 4 random colors is displayed along with its exact midpoints and the accuracy of the player is rated.<sup>1</sup>
 * program other interactive features
 * catalogue scans and photographs of my artwork
 
