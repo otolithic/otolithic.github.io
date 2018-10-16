@@ -1,4 +1,4 @@
-# otolithic.github.io
+# [otolithic.github.io](http://otolithic.github.io)
 A personal website. Here I plan to store various art, music, and programming projects of mine.
 
 Currently it hosts:  
