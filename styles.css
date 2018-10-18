@@ -30,7 +30,7 @@ nav {
     /*border for browsers that don't support border-image*/
     border: 20px double;
     
-    border-image:url(border1.png) 20 0 20 0 repeat;
+    border-image:url(Images/border1.png) 20 0 20 0 repeat;
     border-left: none;
     border-right: none;
 }
@@ -57,7 +57,7 @@ nav li {
     height: 100%;
     width: 300px;
     
-    background-image: url("dancingman1.png");
+    background-image: url("Images/dancingman1.png");
     background-repeat: no-repeat;
 
 }
