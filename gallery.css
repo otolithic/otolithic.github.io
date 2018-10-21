@@ -1,0 +1,14 @@
+body {
+    text-align:center;
+    background-color:black;
+    font-family:monospace;
+    color:azure;
+    
+}
+
+img {
+    max-height:400px;
+    max-width:100%;
+    border-radius:10px;
+}
+
