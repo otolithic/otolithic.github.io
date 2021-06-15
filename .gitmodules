@@ -1,0 +1,9 @@
+[submodule "colorgame"]
+	path = colorgame
+	url = https://github.com/otolithic/colorgame.git
+[submodule "monstermash"]
+	path = monstermash
+	url = https://github.com/otolithic/monstermash.git
+[submodule "swarmtests"]
+	path = swarmtests
+	url = https://github.com/otolithic/swarmtests.git
