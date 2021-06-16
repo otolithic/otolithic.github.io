@@ -1,8 +1,8 @@
 //define the canvas and attach it
 var canvas = document.createElement("canvas")
 document.body.appendChild(canvas)
-var document_width=document.body.getBoundingClientRect().width 
-var document_height=document.body.getBoundingClientRect().height
+var document_width=window.innerWidth 
+var document_height=window.innerHeight
 canvas.height=Math.min(document_width, document_height)
 canvas.width=canvas.height
 var mouse_x
@@ -13,7 +13,7 @@ document.addEventListener("mousemove", () => {
 })
 
 //center the canvas on the page
-var marginLeft = document.body.getBoundingClientRect().width/2 - canvas.width/2
+var marginLeft = document_width/2 - canvas.width/2
 canvas.style.marginLeft=`${marginLeft}px`
 
 //set the context to 2D
@@ -64,7 +64,7 @@ function drawIrises(eye_diam, x_multipliers,y_multipliers){
         var x_center = eye_diam*x_multipliers[idx]+eye_diam/2
         var y_center = eye_diam*y_multipliers[idx]+eye_diam/2
 
-        var dx_to_mouse = x_center-mouse_x
+        var dx_to_mouse = x_center-mouse_x+marginLeft
         var dy_to_mouse = y_center-mouse_y
         var distance_to_mouse = Math.hypot(dx_to_mouse,dy_to_mouse)
         
